@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(to right, #4285f4, #57caff, #0f9d58, #5cdb6d, #ea4335, #ff7daf, #fbbc04, #ffd427);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 500%;
+  animation: _ngcontent-ng-c2139483416_color 7s linear infinite;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Loved by the King", serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contaier-button{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background: #D8124B;
+  transition: all 1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button.yes{
+  background: #19bd3b;
+}
+
+.celebration img{
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
