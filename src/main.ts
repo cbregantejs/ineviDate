@@ -22,7 +22,7 @@ btnYes.addEventListener('click', () => {
 
     const heading = document.querySelector('h1');
     if (heading) {
-        heading.textContent = 'Lo supe desde el principio';
+        heading.textContent = 'Lo supe desde el principio 💕';
     }
     document.querySelector('contaier-button')?.remove();
     document.querySelector('.contaier-button')?.remove();
