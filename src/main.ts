@@ -5,12 +5,21 @@ import cinamonroll from './cinamonroll.gif';
 const btnNo = document.querySelector<HTMLButtonElement>('#noBtn')!;
 
 btnNo.addEventListener('mouseenter', () => {
-    const randomX = Math.floor(Math.random() * (window.innerWidth - btnNo.offsetWidth));
+  moveRandom();
+});
+
+btnNo.addEventListener('click', () => {
+    moveRandom();
+});
+
+const moveRandom = function () {
+  const randomX = Math.floor(Math.random() * (window.innerWidth - btnNo.offsetWidth));
     const randomY = Math.floor(Math.random() * (window.innerHeight - btnNo.offsetHeight));
     btnNo.style.position = 'absolute';
     btnNo.style.left = `${randomX}px`;
     btnNo.style.top = `${randomY}px`;
-});
+}
+
 
 const btnYes = document.querySelector<HTMLButtonElement>('#yes')!;
 btnYes.addEventListener('click', () => {
@@ -37,4 +46,4 @@ btnYes.addEventListener('click', () => {
       duration: 2000,
       easing: 'ease-out'
     });
-  });
+});

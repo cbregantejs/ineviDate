@@ -9,12 +9,13 @@
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 500%;
-  animation: _ngcontent-ng-c2139483416_color 7s linear infinite;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @media (max-width: 768px) {
+    background: linear-gradient(to right, #4285f4, #57caff);
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+  }
+ 
 }
 
 body {
@@ -55,6 +56,7 @@ button {
   cursor: pointer;
   background: #D8124B;
   transition: all 1s;
+  color: #fff;
 }
 
 button:hover {
